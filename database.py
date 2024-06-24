@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 DB_URL = 'mysql+pymysql://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DBNAME}'
 
-class engineconn:
+class DbConnect:
 
     def __init__(self):
         self.engine = create_engine(DB_URL, pool_recycle = 500)
